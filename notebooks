@@ -1,1 +1,21 @@
 #01_peptide_similarity.ipynb
+from Bio import SeqIO
+fasta_path_pathogen = r'C:\Users\Admin\Downloads\PhD_application\bio_analysis\Data\Raw\Pathogen.txt'
+fasta_path_human = r'C:\Users\Admin\Downloads\PhD_application\bio_analysis\Data\Raw\Human.txt'
+def load_single_sequence(fasta_path):
+    for record in SeqIO.parse(fasta_path, "fasta"):
+        return str(record.seq)
+def generate_peptides(sequences, k=9):
+  return[sequences[i:i+k] for i in range(len(sequences) - k + 1)]
+
+pathogen_sequence = load_single_sequence(fasta_path_pathogen)
+human_sequence = load_single_sequence(fasta_path_human)
+pathogen_peptides = generate_peptides(pathogen_sequence, k=9)
+human_peptides = generate_peptides(human_sequence, k=9)
+def exact_matches(x, y):
+    return set(x).intersection(set(y))
+
+matches = exact_matches(pathogen_peptides, human_peptides)
+
+print(matches)
+print("Number of matches:", len(matches))
