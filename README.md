@@ -38,7 +38,7 @@ This repository explores:
 
 ## Requirements
 
-See `requirements.txt`.
+See requirements.txt.
 📌
 ---
 
