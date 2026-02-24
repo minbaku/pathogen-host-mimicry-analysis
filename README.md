@@ -28,8 +28,11 @@ This repository explores:
 
 ## Status
 
-🚧 Work in progress.  
-Current focus: peptide extraction and similarity scoring.
+🎉 Completed   
+- Sequence Extraction ✅
+- Peptide Generation ✅
+- Peptide matches ✅
+- Exact matches ✅
 
 ---
 
@@ -37,3 +40,10 @@ Current focus: peptide extraction and similarity scoring.
 
 See `requirements.txt`.
 📌
+---
+
+## Results and Conclusions:
+
+- 👉 We can conclude from the outcomes of the code that the exact matches between the Pathogen peptide Sequence (_Campylobacter jejuni_ - Sialic Acid Biosynthesis Protein[NeuA]) and Human Sequence (_Homo sapiens_ - Thyroglobulin Precursor Protein[TG]) are none, since the result for matches came out to be 0.
+- 👉 BLAST results and Literature review still give evidence of immunogenicity. Therefore, the result shows that similarity doesn't depend on exact matches of sequence but also on similarity of sequences with the presence of Gaps and Substitutes.
+- 👉 The Results also demonstrate the significance of Twilight zone Sequences which are sequences that present sequence identity of 30%-70%. This observation is very important because it shows the significance of structural similarity in immunogenicity and thus, molecular mimmicry of certain proteins.
