@@ -28,11 +28,13 @@ This repository explores:
 
 ## Status
 
-🎉 Completed   
-- Sequence Extraction ✅
-- Peptide Generation ✅
-- Peptide matches ✅
-- Exact matches ✅
+⚠️ Preliminary exploration — superseded by full pipeline
+
+This repository represents an early exploratory version of peptide 
+similarity analysis. The complete, validated pipeline with structural 
+confirmation across 32 organisms and ML classification is available at:
+
+👉 molecular-mimicry-RA-pipeline
 
 ---
 
